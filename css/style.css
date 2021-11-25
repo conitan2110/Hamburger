@@ -5,6 +5,10 @@
 /*
  * フォント
  */
+.l-header {
+  background-color: #FFF7EF;
+}
+
 .c-grid {
   display: grid;
   grid-template-rows: 217px 1fr 150px;
@@ -34,6 +38,67 @@
    Object
    ========================================================================== */
 /* Component */
+.c-logo {
+  font-family: "Roboto";
+  color: #707070;
+}
+
+.p-search-form {
+  position: relative;
+  /* 基準値とする */
+}
+.p-search-form::before {
+  content: "";
+  width: 30px;
+  /* アイコンの横幅 */
+  height: 30px;
+  /* アイコンの高さ */
+  background: url(../img/search-icon.png) no-repeat center center/auto 100%;
+  /* 背景にアイコン画像を配置 */
+  display: inline-block;
+  /* 高さを持たせるためにインラインブロック要素にする */
+  position: absolute;
+  /* 相対位置に指定 */
+  top: 50%;
+  /* アイコンの位置 */
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 8px;
+}
+.p-search-form__keyword {
+  padding: 3px 0 3px 2.5em;
+  /* アイコンを設置するため左の余白を多めに指定*/
+  width: 396px;
+  height: 46px;
+  border: 1px solid #707070;
+  /* 枠線 */
+  border-radius: 0.5em;
+  /* 角丸 */
+}
+.p-search-form__submit {
+  width: 136px;
+  height: 46px;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#DED8D3), to(#F2EDE9));
+  background-image: linear-gradient(0deg, #DED8D3, #F2EDE9);
+  /* グラデーション */
+  border: 1px solid #707070;
+  /* 枠線 */
+  border-radius: 0.5em;
+  /* 角丸 */
+}
+
 /* Project */
+.p-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 /* Utility */
 /*# sourceMappingURL=style.css.map */

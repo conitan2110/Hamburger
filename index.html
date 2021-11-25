@@ -16,21 +16,30 @@
 
     <body>
         <div class="c-grid">
-            <header class="l-header c-grid__item1">
-                header
-            </header>
+            <!-- header -->
+            <header class="l-header p-header c-grid__item1">
+                <h1 class="p-header__logo c-logo">Hamburger</h1>
+                <form action="" class="p-search-form" name="search">
+                    <label for="search" class="p-search-form__screen-text"></label>
+                    <input type="search" placeholder="検索..." class="p-search-form__keyword">
+                    <input  type="submit" value="検索" class="p-search-form__submit">
+                </form>
+            </header><!-- ここまでheader -->
 
-            <article class="l-contents c-grid__item2">
+            <!-- contents -->
+            <article class="l-contents p-contents c-grid__item2">
                 contents
-            </article>
+            </article><!-- ここまでcontents -->
 
-            <aside class="l-sidebar c-grid__item3">
+            <!-- sidebar -->
+            <aside class="l-sidebar p-sidebar c-grid__item3">
                 sidebar
-            </aside>
+            </aside><!-- ここまでsidebar -->
 
-            <footer class="l-footer c-grid__item4">
+            <!-- footer -->
+            <footer class="l-footer p-footer c-grid__item4">
                 footer
-            </footer>
+            </footer><!-- ここまでfooter -->
         </div>
     </body>
 </html>
