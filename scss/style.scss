@@ -5,12 +5,15 @@
    ========================================================================== */
 
 @use "foundation/variable" as v;
+@use "foundation/base";
 
 /* ==========================================================================
    Layout
    ========================================================================== */
 
 @use "layout/header";
+@use "layout/sidebar";
+@use "layout/footer";
 
 /* ==========================================================================
    Object
@@ -23,6 +26,14 @@
    font-family: v.$font-Roboto-Bold;
    color: v.$font-color--gray;
 }
+.c-line {
+   width: 63px;
+   border-bottom: 4px solid v.$font-color--white;
+   padding-bottom: 34.5px; /* 内容と線との間隔量 */
+}
+
+/* Project */
+// @use "object/project";
 
 .p-search-form {
    position: relative;       /* 基準値とする */
@@ -53,14 +64,49 @@
    }
 }
 
-/* Project */
-// @use "object/project";
-
 .p-header {
    display: flex;
    justify-content: space-between;
    align-items: center;
 }
+
+.p-food-menu {
+   background-color: aqua;
+}
+
+.p-access {
+   &__box {
+      background-color: rgba(0, 0, 0, 0.29);
+   }
+   &__line {
+      border-width: 2px;
+   }
+}
+
+.p-footer {
+   color: v.$font-color--white;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   &__wrapper {
+      text-align: center;
+   }
+   &__menu {
+      display: flex;
+      font-family: v.$font-Mplus-j-Regular;
+   }
+   &__menu-li {
+      padding: 0 19px;
+      border-right: 1px solid v.$font-color--white;    /* 間の枠線 */
+      &:last-of-type {
+         border-right: 0;  /* 右の枠線は消す */
+      }
+   }
+   &__copyright {
+      font-family: v.$font-Mplus-Regular;
+   }
+}
+
 
 /* Utility */
 // @use "object/utility";

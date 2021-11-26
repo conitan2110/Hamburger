@@ -5,13 +5,18 @@
         <title>Hamburger</title>
         <meta name="description" content="ハンバーガーサイト（ダミーサイト）">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- リセットCSS -->
         <link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css" />
+        <!-- Webフォント -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="http://mplus-fonts.sourceforge.jp/webfonts/basic_latin/mplus_webfonts.css">
         <link rel="stylesheet" type="text/css" href="http://mplus-fonts.sourceforge.jp/webfonts/general-j/mplus_webfonts.css">
+        <!-- スタイルシート -->
         <link rel="stylesheet" href="css/style.css">
+        <!-- favicon -->
+        <link rel="icon" href="img/favicon.ico">
     </head>
 
     <body>
@@ -28,17 +33,89 @@
 
             <!-- contents -->
             <article class="l-contents p-contents c-grid__item2">
-                contents
+                <!-- mainvisual -->
+                <div class="p-mainvisual p-mainvisual__bg c-bg">
+                    <h2 class="p-mainvisual__title c-title">ダミーサイト</h2>
+                </div><!-- ここまでmainvisual -->
+
+                <!-- food-menu -->
+                <div class="p-food-menu">
+                    <ul class="p-food-menu__ul">
+                        <li class="p-food-menu__li">
+                            <h2 class="p-food-menu__title c-title">Take Out</h2>
+                            <p class="p-food-menu__line c-line"></p>
+                            <dl class="p-food-menu__dl">
+                                <dt class="p-food-menu__dt">Take OUT</dt>
+                                <dd class="p-food-menu__dd">当店のテイクアウトで利用できる商品を掲載しています</dd>
+                                <dt class="p-food-menu__dt">Take OUT</dt>
+                                <dd class="p-food-menu__dd">当店のテイクアウトで利用できる商品を掲載しています</dd>
+                            </dl>
+                        </li>
+                        <li class="p-food-menu__li">
+                            <h2 class="p-food-menu__title c-title">Eat In</h2>
+                            <p class="c-line"></p>
+                            <dl class="p-food-menu__dl">
+                                <dt class="p-food-menu__dt">Take OUT</dt>
+                                <dd class="p-food-menu__dd">当店のテイクアウトで利用できる商品を掲載しています</dd>
+                                <dt class="p-food-menu__dt">Take OUT</dt>
+                                <dd class="p-food-menu__dd">当店のテイクアウトで利用できる商品を掲載しています</dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </div><!-- ここまでfood-menu -->
+
+                <!-- access -->
+                <section class="p-access">
+                    <div class="p-access__box">
+                        <h2 class="p-access__title c-title">見出しが入ります</h2>
+                        <p class="p-access__line c-line"></p>
+                        <p class="p-access__text c-text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                    </div>
+                </section><!-- ここまでaccess -->
             </article><!-- ここまでcontents -->
 
             <!-- sidebar -->
             <aside class="l-sidebar p-sidebar c-grid__item3">
-                sidebar
+                <h2 class="p-sidebar__logo c-title">Menu</h2>
+                <ul class="p-sidebar__ul">
+                    <li class="p-sidebar__li">バーガー</li>
+                        <ul class="p-sidebar__sub-ul">
+                            <li class="p-sidebar__sub-li">ハンバーガー</li>
+                            <li class="p-sidebar__sub-li">チーズバーガー</li>
+                            <li class="p-sidebar__sub-li">テリヤキバーガー</li>
+                            <li class="p-sidebar__sub-li">アボカドバーガー</li>
+                            <li class="p-sidebar__sub-li">フィッシュバーガー</li>
+                            <li class="p-sidebar__sub-li">ベーコンバーガー</li>
+                            <li class="p-sidebar__sub-li">チキンバーガー</li>
+                        </ul>
+                    <li class="p-sidebar__li">サイド</li>
+                        <ul class="p-sidebar__sub-ul">
+                            <li class="p-sidebar__sub-li">ポテト</li>
+                            <li class="p-sidebar__sub-li">サラダ</li>
+                            <li class="p-sidebar__sub-li">ナゲット</li>
+                            <li class="p-sidebar__sub-li">コーン</li>
+                        </ul>
+                    <li class="p-sidebar__li">ドリンク</li>
+                        <ul class="p-sidebar__sub-ul">
+                            <li class="p-sidebar__sub-li">コーラ</li>
+                            <li class="p-sidebar__sub-li">ファンタ</li>
+                            <li class="p-sidebar__sub-li">オレンジ</li>
+                            <li class="p-sidebar__sub-li">アップル</li>
+                            <li class="p-sidebar__sub-li">紅茶（Ice/Hot）</li>
+                            <li class="p-sidebar__sub-li">コーヒー（Ice/Hot）</li>
+                        </ul>
+                </ul>
             </aside><!-- ここまでsidebar -->
 
             <!-- footer -->
             <footer class="l-footer p-footer c-grid__item4">
-                footer
+                <div class="p-footer__wrapper">
+                    <ul class="p-footer__menu">
+                        <li class="p-footer__menu-li">ショップ情報</li>
+                        <li class="p-footer__menu-li">ヒストリー</li>
+                    </ul>
+                    <small class="p-footer__copyright">Copyright: RaiseTech</small>
+                </div>
             </footer><!-- ここまでfooter -->
         </div>
     </body>

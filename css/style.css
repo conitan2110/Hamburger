@@ -5,8 +5,33 @@
 /*
  * フォント
  */
+a {
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+h1 {
+  font-size: 64px;
+}
+
 .l-header {
   background-color: #FFF7EF;
+}
+
+.l-sidebar {
+  background-color: #F2EDE9;
+}
+
+.l-footer {
+  background-color: #9D8670;
 }
 
 .c-grid {
@@ -43,6 +68,14 @@
   color: #707070;
 }
 
+.c-line {
+  width: 63px;
+  border-bottom: 4px solid #fff;
+  padding-bottom: 34.5px;
+  /* 内容と線との間隔量 */
+}
+
+/* Project */
 .p-search-form {
   position: relative;
   /* 基準値とする */
@@ -87,7 +120,6 @@
   /* 角丸 */
 }
 
-/* Project */
 .p-header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -98,6 +130,51 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.p-food-menu {
+  background-color: aqua;
+}
+
+.p-access__box {
+  background-color: rgba(0, 0, 0, 0.29);
+}
+.p-access__line {
+  border-width: 2px;
+}
+
+.p-footer {
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.p-footer__wrapper {
+  text-align: center;
+}
+.p-footer__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "M+ Type-1 (general-j) Regular";
+}
+.p-footer__menu-li {
+  padding: 0 19px;
+  border-right: 1px solid #fff;
+  /* 間の枠線 */
+}
+.p-footer__menu-li:last-of-type {
+  border-right: 0;
+  /* 右の枠線は消す */
+}
+.p-footer__copyright {
+  font-family: "M+ M Type-1 (basic latin) Regular";
 }
 
 /* Utility */
