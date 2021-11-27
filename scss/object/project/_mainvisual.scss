@@ -1,0 +1,14 @@
+.p-mainvisual {
+    height: 530px;
+    background-size: cover;
+    // background-size: auto 530px;
+    background-repeat: no-repeat;
+    background-image: url(../../../img/mainvisual-pc2.jpg);
+    // background-position: 60% 0;
+    display: flex;
+    align-items: center;
+    &__title {
+        font-size: 40px;
+        padding-left: 86px;
+    }
+}

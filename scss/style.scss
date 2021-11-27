@@ -11,9 +11,7 @@
    Layout
    ========================================================================== */
 
-@use "layout/header";
-@use "layout/sidebar";
-@use "layout/footer";
+// @use "layout/header";
 
 /* ==========================================================================
    Object
@@ -21,92 +19,17 @@
 
 /* Component */
 @use "object/component/grid";
-
-.c-logo {
-   font-family: v.$font-Roboto-Bold;
-   color: v.$font-color--gray;
-}
-.c-line {
-   width: 63px;
-   border-bottom: 4px solid v.$font-color--white;
-   padding-bottom: 34.5px; /* 内容と線との間隔量 */
-}
+@use "object/component/text";
+@use "object/component/line";
 
 /* Project */
-// @use "object/project";
-
-.p-search-form {
-   position: relative;       /* 基準値とする */
-   &::before {
-      content: "";
-      width: 30px;           /* アイコンの横幅 */
-      height: 30px;          /* アイコンの高さ */
-      background: url(../img/search-icon.png) no-repeat center center / auto 100%; /* 背景にアイコン画像を配置 */
-      display: inline-block; /* 高さを持たせるためにインラインブロック要素にする */
-      position: absolute;    /* 相対位置に指定 */
-      top: 50%;              /* アイコンの位置 */
-      transform: translateY(-50%);
-      left: 8px;
-   }
-   &__keyword {
-      padding: 3px 0 3px 2.5em; /* アイコンを設置するため左の余白を多めに指定*/
-      width: 396px;
-      height: 46px;
-      border: 1px solid v.$font-color--gray;  /* 枠線 */
-      border-radius: 0.5em;   /* 角丸 */
-   }
-   &__submit {
-      width: 136px;
-      height: 46px;
-      background-image: linear-gradient(0deg, #DED8D3, #F2EDE9); /* グラデーション */
-      border: 1px solid v.$font-color--gray; /* 枠線 */
-      border-radius: 0.5em;      /* 角丸 */
-   }
-}
-
-.p-header {
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-}
-
-.p-food-menu {
-   background-color: aqua;
-}
-
-.p-access {
-   &__box {
-      background-color: rgba(0, 0, 0, 0.29);
-   }
-   &__line {
-      border-width: 2px;
-   }
-}
-
-.p-footer {
-   color: v.$font-color--white;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   &__wrapper {
-      text-align: center;
-   }
-   &__menu {
-      display: flex;
-      font-family: v.$font-Mplus-j-Regular;
-   }
-   &__menu-li {
-      padding: 0 19px;
-      border-right: 1px solid v.$font-color--white;    /* 間の枠線 */
-      &:last-of-type {
-         border-right: 0;  /* 右の枠線は消す */
-      }
-   }
-   &__copyright {
-      font-family: v.$font-Mplus-Regular;
-   }
-}
-
+@use "object/project/header";
+@use "object/project/sidebar";
+@use "object/project/footer";
+@use "object/project/search-form";
+@use "object/project/mainvisual";
+@use "object/project/food-menu";
+@use "object/project/access";
 
 /* Utility */
 // @use "object/utility";

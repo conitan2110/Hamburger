@@ -1,0 +1,22 @@
+@use "../../foundation/variable" as v;
+
+.p-sidebar {
+    background-color: v.$bgcolor--sidebar;
+    color: v.$font-color--gray;
+    padding-top: 82px;
+    padding-left: 46px;
+    &__logo {
+        margin-bottom: 85px;
+        font-size: 34px;
+    }
+    &__li {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        font-size: 24px;
+    }
+    &__sub-li {
+        padding-left: 20px;
+        padding-bottom: 23px;
+        font-size: 20px;
+    }
+}

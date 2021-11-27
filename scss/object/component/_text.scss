@@ -1,0 +1,25 @@
+@use "../../foundation/variable" as v;
+
+.c-text {
+    &__ttl {
+        &--ja {
+            font-family: v.$font-Mplus-j-Bold;  /* 見出し 日本語 */
+        }
+        &--e {
+            font-family: v.$font-Roboto-Bold;  /* 見出し 英語 */
+        }
+    }
+    &--ja {
+        font-family: v.$font-Mplus-j-Regular;  /* テキスト 日本語 */
+    }
+    &--e {
+        font-family: v.$font-Mplus-Regular;  /* テキスト 英語 */
+    }
+}
+
+h2.c-text__ttl {
+    &--ja,
+    &--e:not(.p-sidebar__logo) {
+        color: v.$font-color--white;
+    }
+}

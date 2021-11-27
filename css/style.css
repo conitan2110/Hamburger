@@ -1,10 +1,4 @@
 @charset "UTF-8";
-/*
- * 配色
- */
-/*
- * フォント
- */
 a {
   text-decoration: none;
 }
@@ -16,22 +10,6 @@ ul {
 
 li {
   list-style: none;
-}
-
-h1 {
-  font-size: 64px;
-}
-
-.l-header {
-  background-color: #FFF7EF;
-}
-
-.l-sidebar {
-  background-color: #F2EDE9;
-}
-
-.l-footer {
-  background-color: #9D8670;
 }
 
 .c-grid {
@@ -53,19 +31,25 @@ h1 {
   grid-area: footer;
 }
 
-/* ==========================================================================
-   Foundation
-   ========================================================================== */
-/* ==========================================================================
-   Layout
-   ========================================================================== */
-/* ==========================================================================
-   Object
-   ========================================================================== */
-/* Component */
-.c-logo {
+.c-text__ttl--ja {
+  font-family: "M+ Type-1 (general-j) Bold";
+  /* 見出し 日本語 */
+}
+.c-text__ttl--e {
   font-family: "Roboto";
-  color: #707070;
+  /* 見出し 英語 */
+}
+.c-text--ja {
+  font-family: "M+ Type-1 (general-j) Regular";
+  /* テキスト 日本語 */
+}
+.c-text--e {
+  font-family: "M+ M Type-1 (basic latin) Regular";
+  /* テキスト 英語 */
+}
+
+h2.c-text__ttl--ja, h2.c-text__ttl--e:not(.p-sidebar__logo) {
+  color: #fff;
 }
 
 .c-line {
@@ -75,10 +59,89 @@ h1 {
   /* 内容と線との間隔量 */
 }
 
-/* Project */
+.p-header {
+  background-color: #FFF7EF;
+  color: #707070;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.p-header__logo {
+  font-size: 64px;
+  margin-left: 65px;
+}
+
+.p-sidebar {
+  background-color: #F2EDE9;
+  color: #707070;
+  padding-top: 82px;
+  padding-left: 46px;
+}
+.p-sidebar__logo {
+  margin-bottom: 85px;
+  font-size: 34px;
+}
+.p-sidebar__li {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-size: 24px;
+}
+.p-sidebar__sub-li {
+  padding-left: 20px;
+  padding-bottom: 23px;
+  font-size: 20px;
+}
+
+.p-footer {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../../../img/footer-bg-pc.jpg);
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.p-footer__wrapper {
+  text-align: center;
+}
+.p-footer__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "M+ Type-1 (general-j) Regular";
+  font-size: 24px;
+  margin-bottom: 34px;
+}
+.p-footer__menu-li {
+  padding: 0 19px;
+  border-right: 1px solid #fff;
+  /* 間の枠線 */
+}
+.p-footer__menu-li:last-of-type {
+  border-right: 0;
+  /* 右の枠線は消す */
+}
+.p-footer__copyright {
+  font-family: "M+ M Type-1 (basic latin) Regular";
+  font-size: 14px;
+}
+
 .p-search-form {
   position: relative;
   /* 基準値とする */
+  margin-right: 31px;
 }
 .p-search-form::before {
   content: "";
@@ -86,7 +149,7 @@ h1 {
   /* アイコンの横幅 */
   height: 30px;
   /* アイコンの高さ */
-  background: url(../img/search-icon.png) no-repeat center center/auto 100%;
+  background: url(../../../img/search-icon.png) no-repeat center center/auto 100%;
   /* 背景にアイコン画像を配置 */
   display: inline-block;
   /* 高さを持たせるためにインラインブロック要素にする */
@@ -118,64 +181,111 @@ h1 {
   /* 枠線 */
   border-radius: 0.5em;
   /* 角丸 */
+  margin-left: 13px;
 }
 
-.p-header {
+.p-mainvisual {
+  height: 530px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../../../img/mainvisual-pc2.jpg);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
+.p-mainvisual__title {
+  font-size: 40px;
+  padding-left: 86px;
+}
 
 .p-food-menu {
-  background-color: aqua;
+  width: 100%;
 }
-
-.p-access__box {
-  background-color: rgba(0, 0, 0, 0.29);
+.p-food-menu__title {
+  font-size: 80px;
+  margin-left: 19px;
 }
-.p-access__line {
-  border-width: 2px;
+.p-food-menu__line {
+  margin-bottom: 625px;
+  margin-left: 26.5px;
 }
-
-.p-footer {
-  color: #fff;
+.p-food-menu__ul {
+  color: #3C2A10;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  margin: 120px auto 134px;
 }
-.p-footer__wrapper {
-  text-align: center;
+.p-food-menu__li {
+  width: 40%;
+  background-color: aqua;
 }
-.p-footer__menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-family: "M+ Type-1 (general-j) Regular";
+.p-food-menu__li:nth-child(2) {
+  margin-left: 80px;
 }
-.p-footer__menu-li {
-  padding: 0 19px;
-  border-right: 1px solid #fff;
-  /* 間の枠線 */
+.p-food-menu__dl {
+  background-color: rgba(255, 255, 255, 0.8);
+  margin: 20px;
+  padding: 17px 25px 17px 19px;
 }
-.p-footer__menu-li:last-of-type {
-  border-right: 0;
-  /* 右の枠線は消す */
+.p-food-menu__dt {
+  font-family: "M+ M Type-1 (basic latin) Bold";
+  font-size: 24px;
+  margin-bottom: 26px;
 }
-.p-footer__copyright {
-  font-family: "M+ M Type-1 (basic latin) Regular";
+.p-food-menu__dd {
+  font-size: 16px;
 }
 
+.p-access {
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../../../img/map.jpg);
+  background-position: 0 50%;
+}
+.p-access__map-layer {
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.p-access__bg-layer {
+  width: 60%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.29);
+}
+.p-access__wrapper {
+  width: 73%;
+  padding-top: 83px;
+  padding-bottom: 40px;
+  margin-left: 12.69%;
+}
+.p-access__line {
+  border-width: 2px;
+  padding-bottom: 0;
+  margin-top: 55.5px;
+  margin-bottom: 63.5px;
+}
+.p-access__text {
+  font-family: "M+ Type-1 (general-j) Bold";
+  color: #fff;
+}
+
+/* ==========================================================================
+   Foundation
+   ========================================================================== */
+/* ==========================================================================
+   Layout
+   ========================================================================== */
+/* ==========================================================================
+   Object
+   ========================================================================== */
+/* Component */
+/* Project */
 /* Utility */
 /*# sourceMappingURL=style.css.map */

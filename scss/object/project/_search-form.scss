@@ -1,0 +1,32 @@
+@use "../../foundation/variable" as v;
+
+.p-search-form {
+    position: relative;       /* 基準値とする */
+    margin-right: 31px;
+    &::before {
+       content: "";
+       width: 30px;           /* アイコンの横幅 */
+       height: 30px;          /* アイコンの高さ */
+       background: url(../../../img/search-icon.png) no-repeat center center / auto 100%; /* 背景にアイコン画像を配置 */
+       display: inline-block; /* 高さを持たせるためにインラインブロック要素にする */
+       position: absolute;    /* 相対位置に指定 */
+       top: 50%;              /* アイコンの位置 */
+       transform: translateY(-50%);
+       left: 8px;
+    }
+    &__keyword {
+       padding: 3px 0 3px 2.5em; /* アイコンを設置するため左の余白を多めに指定*/
+       width: 396px;
+       height: 46px;
+       border: 1px solid v.$font-color--gray;  /* 枠線 */
+       border-radius: 0.5em;   /* 角丸 */
+    }
+    &__submit {
+       width: 136px;
+       height: 46px;
+       background-image: linear-gradient(0deg, #DED8D3, #F2EDE9); /* グラデーション */
+       border: 1px solid v.$font-color--gray; /* 枠線 */
+       border-radius: 0.5em;      /* 角丸 */
+       margin-left: 13px;
+    }
+}

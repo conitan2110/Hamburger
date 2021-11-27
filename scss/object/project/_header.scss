@@ -1,0 +1,13 @@
+@use "../../foundation/variable" as v;
+
+.p-header {
+    background-color: v.$bgcolor--header;
+    color: v.$font-color--gray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__logo {
+        font-size: 64px;
+        margin-left: 65px;
+    }
+}

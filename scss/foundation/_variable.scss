@@ -1,6 +1,3 @@
-/*
- * 配色
- */
 // 文字カラー
 $font-color--gray: #707070;
 $font-color--white: #fff;
@@ -12,13 +9,11 @@ $bgcolor--footer: #9D8670;
 $bgcolor--sidebar: #F2EDE9;
 $bgcolor--card: #3C2B1C;
 
-/*
- * フォント
- */
-// 日本語
- $font-Mplus-j-Regular: 'M+ Type-1 (general-j) Regular';
- $font-Mplus-j-Bold: 'M+ Type-1 (general-j) Bold';
-// 英語
- $font-Mplus-Regular: 'M+ M Type-1 (basic latin) Regular';
- $font-Mplus-Bold: 'M+ M Type-1 (basic latin) Bold';
- $font-Roboto-Bold: 'Roboto';
+// 日本語フォント
+$font-Mplus-j-Regular: 'M+ Type-1 (general-j) Regular';
+$font-Mplus-j-Bold: 'M+ Type-1 (general-j) Bold';
+
+// 英語フォント
+$font-Mplus-Regular: 'M+ M Type-1 (basic latin) Regular';
+$font-Mplus-Bold: 'M+ M Type-1 (basic latin) Bold';
+$font-Roboto-Bold: 'Roboto';
