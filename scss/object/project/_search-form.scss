@@ -14,19 +14,15 @@
        transform: translateY(-50%);
        left: 8px;
     }
-    &__keyword {
+    &__input {
        padding: 3px 0 3px 2.5em; /* アイコンを設置するため左の余白を多めに指定*/
        width: 396px;
        height: 46px;
-       border: 1px solid v.$font-color--gray;  /* 枠線 */
-       border-radius: 0.5em;   /* 角丸 */
     }
-    &__submit {
+    &__button {
        width: 136px;
        height: 46px;
        background-image: linear-gradient(0deg, #DED8D3, #F2EDE9); /* グラデーション */
-       border: 1px solid v.$font-color--gray; /* 枠線 */
-       border-radius: 0.5em;      /* 角丸 */
        margin-left: 13px;
     }
 }

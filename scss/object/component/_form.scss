@@ -1,0 +1,12 @@
+@use "../../foundation/variable" as v;
+
+.c-form {
+    &__input {
+        border: 1px solid v.$font-color--gray;  /* 枠線 */
+        border-radius: 0.5em;   /* 角丸 */
+    }
+    &__button {
+        border: 1px solid v.$font-color--gray;  /* 枠線 */
+        border-radius: 0.5em;   /* 角丸 */
+    }
+}

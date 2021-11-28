@@ -11,16 +11,17 @@
    Layout
    ========================================================================== */
 
-// @use "layout/header";
+@use "layout/grid";
 
 /* ==========================================================================
    Object
    ========================================================================== */
 
 /* Component */
-@use "object/component/grid";
 @use "object/component/text";
 @use "object/component/line";
+@use "object/component/bg";
+@use "object/component/form";
 
 /* Project */
 @use "object/project/header";

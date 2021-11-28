@@ -1,0 +1,21 @@
+.l-grid {
+    display: grid;
+    grid-template-rows: 217px 1fr 150px;
+    grid-template-columns: 1fr 19%;
+    grid-template-areas:
+        "header sidebar"
+        "contents sidebar"
+        "footer footer";
+    &__item1 {
+        grid-area: header;
+    }
+    &__item2 {
+        grid-area: contents;
+    }
+    &__item3 {
+        grid-area: sidebar;
+    }
+    &__item4 {
+        grid-area: footer;
+    }
+}

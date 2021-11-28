@@ -12,22 +12,22 @@ li {
   list-style: none;
 }
 
-.c-grid {
+.l-grid {
   display: grid;
   grid-template-rows: 217px 1fr 150px;
   grid-template-columns: 1fr 19%;
   grid-template-areas: "header sidebar" "contents sidebar" "footer footer";
 }
-.c-grid__item1 {
+.l-grid__item1 {
   grid-area: header;
 }
-.c-grid__item2 {
+.l-grid__item2 {
   grid-area: contents;
 }
-.c-grid__item3 {
+.l-grid__item3 {
   grid-area: sidebar;
 }
-.c-grid__item4 {
+.l-grid__item4 {
   grid-area: footer;
 }
 
@@ -57,6 +57,24 @@ h2.c-text__ttl--ja, h2.c-text__ttl--e:not(.p-sidebar__logo) {
   border-bottom: 4px solid #fff;
   padding-bottom: 34.5px;
   /* 内容と線との間隔量 */
+}
+
+.c-bg {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.c-form__input {
+  border: 1px solid #707070;
+  /* 枠線 */
+  border-radius: 0.5em;
+  /* 角丸 */
+}
+.c-form__button {
+  border: 1px solid #707070;
+  /* 枠線 */
+  border-radius: 0.5em;
+  /* 角丸 */
 }
 
 .p-header {
@@ -161,33 +179,23 @@ h2.c-text__ttl--ja, h2.c-text__ttl--e:not(.p-sidebar__logo) {
           transform: translateY(-50%);
   left: 8px;
 }
-.p-search-form__keyword {
+.p-search-form__input {
   padding: 3px 0 3px 2.5em;
   /* アイコンを設置するため左の余白を多めに指定*/
   width: 396px;
   height: 46px;
-  border: 1px solid #707070;
-  /* 枠線 */
-  border-radius: 0.5em;
-  /* 角丸 */
 }
-.p-search-form__submit {
+.p-search-form__button {
   width: 136px;
   height: 46px;
   background-image: -webkit-gradient(linear, left bottom, left top, from(#DED8D3), to(#F2EDE9));
   background-image: linear-gradient(0deg, #DED8D3, #F2EDE9);
   /* グラデーション */
-  border: 1px solid #707070;
-  /* 枠線 */
-  border-radius: 0.5em;
-  /* 角丸 */
   margin-left: 13px;
 }
 
 .p-mainvisual {
   height: 530px;
-  background-size: cover;
-  background-repeat: no-repeat;
   background-image: url(../../../img/mainvisual-pc2.jpg);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -209,10 +217,10 @@ h2.c-text__ttl--ja, h2.c-text__ttl--e:not(.p-sidebar__logo) {
   margin-left: 19px;
 }
 .p-food-menu__line {
-  margin-bottom: 625px;
   margin-left: 26.5px;
 }
 .p-food-menu__ul {
+  height: 1082px;
   color: #3C2A10;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -224,9 +232,24 @@ h2.c-text__ttl--ja, h2.c-text__ttl--e:not(.p-sidebar__logo) {
 }
 .p-food-menu__li {
   width: 40%;
-  background-color: aqua;
+  background-position: top center;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.p-food-menu__li:first-child {
+  background-image: url(../../../img/takeout-pc.jpg);
 }
 .p-food-menu__li:nth-child(2) {
+  background-image: url(../../../img/eatin-pc.jpg);
   margin-left: 80px;
 }
 .p-food-menu__dl {
@@ -245,8 +268,6 @@ h2.c-text__ttl--ja, h2.c-text__ttl--e:not(.p-sidebar__logo) {
 
 .p-access {
   width: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
   background-image: url(../../../img/map.jpg);
   background-position: 0 50%;
 }
