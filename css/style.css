@@ -220,7 +220,7 @@ h2.c-text__ttl--ja, h2.c-text__ttl--e:not(.p-sidebar__logo) {
   margin-left: 26.5px;
 }
 .p-food-menu__ul {
-  height: 1082px;
+  min-height: 1000px;
   color: #3C2A10;
   display: -webkit-box;
   display: -ms-flexbox;

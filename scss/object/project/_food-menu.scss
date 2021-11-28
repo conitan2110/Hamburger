@@ -10,7 +10,7 @@
         margin-left: 26.5px;
     }
     &__ul {
-        height: 1082px; //** YATさん：高さではない
+        min-height: 1000px; //** YATさん：高さではない
         color: v.$font-color--brown;
         display: flex;
         justify-content: center;
