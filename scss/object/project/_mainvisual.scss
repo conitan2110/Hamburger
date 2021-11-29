@@ -1,10 +1,12 @@
 .p-mainvisual {
-    height: 530px;
+    height: 415px;
+    width: 100%;
     background-image: url(../../../img/mainvisual-pc2.jpg);
+    // background-position: center;
     display: flex;
     align-items: center;
     &__title {
-        font-size: 40px;
-        padding-left: 86px;
+        font-size: 31px;
+        padding-left: 5.53%;
     }
 }

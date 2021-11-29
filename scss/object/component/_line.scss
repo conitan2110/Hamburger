@@ -1,7 +1,7 @@
 @use "../../foundation/variable" as v;
 
 .c-line {
-    width: 63px;
+    width: 49px;
     border-bottom: 4px solid v.$font-color--white;
-    padding-bottom: 34.5px; /* 内容と線との間隔量 */
+    padding-bottom: 24px; /* 内容と線との間隔量 */
  }

@@ -3,18 +3,19 @@
 .p-food-menu {
     width: 100%;
     &__title {
-        font-size: 80px;
-        margin-left: 19px;
+        font-size: 62.7px;
+        margin-top: 15px;
+        margin-left: 3%;
     }
     &__line {
-        margin-left: 26.5px;
+        margin-left: 3.5%;
     }
     &__ul {
-        min-height: 1000px; //** YATさん：高さではない
+        min-height: 1000px;
         color: v.$font-color--brown;
         display: flex;
         justify-content: center;
-        margin: 120px auto 134px;
+        margin: 94px auto 105px;
     }
     &__li {
         width: 40%;
@@ -29,20 +30,21 @@
         }
         &:nth-child(2) {
             background-image: url(../../../img/eatin-pc.jpg);
-            margin-left: 80px;
+            margin-left: 5.15%;
         }
     }
     &__dl {
         background-color: rgba(255,255,255,0.8);
-        margin: 20px;
-        padding: 17px 25px 17px 19px;
+        margin: 3.2%;
+        // padding: 17px 25px 17px 19px;
+        padding: 13px 4.27% 13px 3.24%;
     }
     &__dt {
         font-family: v.$font-Mplus-Bold;
-        font-size: 24px;
-        margin-bottom: 26px;
+        font-size: 19px;
+        margin-bottom: 20px;
     }
     &__dd {
-        font-size: 16px;
+        font-size: 12.5px;
     }
  }

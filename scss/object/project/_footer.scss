@@ -15,11 +15,11 @@
    &__menu {
       display: flex;
       font-family: v.$font-Mplus-j-Regular;
-      font-size: 24px;
-      margin-bottom: 34px;
+      font-size: 15.7px;
+      margin-bottom: 19px;
    }
    &__menu-li {
-      padding: 0 19px;
+      padding: 0 14px;
       border-right: 1px solid v.$font-color--white;    /* 間の枠線 */
       &:last-of-type {
          border-right: 0;  /* 右の枠線は消す */
@@ -27,6 +27,6 @@
    }
    &__copyright {
       font-family: v.$font-Mplus-Regular;
-      font-size: 14px;
+      font-size: 11px;
    }
  }
