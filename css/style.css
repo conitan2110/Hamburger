@@ -27,8 +27,19 @@ li {
 .l-grid__item3 {
   grid-area: sidebar;
 }
+@media (max-width: 834px) {
+  .l-grid__item3 {
+    display: none;
+  }
+}
 .l-grid__item4 {
   grid-area: footer;
+}
+@media (max-width: 834px) {
+  .l-grid {
+    grid-template-columns: 1fr;
+    grid-template-areas: "header" "contents" "footer";
+  }
 }
 
 .c-text__ttl--ja {
@@ -214,7 +225,7 @@ h2.c-text__ttl--ja, h2.c-text__ttl--e:not(.p-sidebar__logo) {
 .p-mainvisual {
   height: 415px;
   width: 100%;
-  background-image: url(../../../img/mainvisual-pc2.jpg);
+  background-image: url(../../../img/mainvisual-pc.jpg);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -239,7 +250,7 @@ h2.c-text__ttl--ja, h2.c-text__ttl--e:not(.p-sidebar__logo) {
   margin-left: 3.5%;
 }
 .p-food-menu__ul {
-  min-height: 1000px;
+  min-height: 642px;
   color: #3C2A10;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -248,6 +259,18 @@ h2.c-text__ttl--ja, h2.c-text__ttl--e:not(.p-sidebar__logo) {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 94px auto 105px;
+}
+@media (max-width: 640px) {
+  .p-food-menu__ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 20px 0;
+  }
 }
 .p-food-menu__li {
   width: 40%;
@@ -264,12 +287,23 @@ h2.c-text__ttl--ja, h2.c-text__ttl--e:not(.p-sidebar__logo) {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+@media (max-width: 640px) {
+  .p-food-menu__li {
+    width: 89%;
+  }
+}
 .p-food-menu__li:first-child {
   background-image: url(../../../img/takeout-pc.jpg);
 }
 .p-food-menu__li:nth-child(2) {
   background-image: url(../../../img/eatin-pc.jpg);
   margin-left: 5.15%;
+}
+@media (max-width: 640px) {
+  .p-food-menu__li:nth-child(2) {
+    margin-left: 0;
+    margin-top: 20px;
+  }
 }
 .p-food-menu__dl {
   background-color: rgba(255, 255, 255, 0.8);

@@ -1,3 +1,5 @@
+@use "../foundation/mixin" as m;
+
 .l-grid {
     display: grid;
     grid-template-rows: 170px 1fr 118px;
@@ -14,8 +16,18 @@
     }
     &__item3 {
         grid-area: sidebar;
+        @include m.mq( tablet ) {
+            display: none;
+        }
     }
     &__item4 {
         grid-area: footer;
+    }
+    @include m.mq( tablet ) {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "header"
+            "contents"
+            "footer";
     }
 }

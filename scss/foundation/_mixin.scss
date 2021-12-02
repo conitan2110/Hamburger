@@ -1,0 +1,16 @@
+$breakpoint: (
+    'tablet': 834px,
+    'sp': 640px,
+);
+
+// メディアクエリ
+@mixin mq-free( $key ) {
+    @media ( max-width: $key ) {
+        @content;
+    }
+}
+@mixin mq( $key ) {
+    @media ( max-width: map-get( $breakpoint, $key )) {
+        @content;
+    }
+}
