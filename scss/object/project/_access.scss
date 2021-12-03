@@ -1,23 +1,35 @@
 @use "../../foundation/variable" as v;
+@use "../../foundation/mixin" as m;
 
 .p-access {
    width: 100%;
    background-image: url(../../../img/map.jpg);
    background-position: 0 50%;
    &__map-layer {
-      height: 100%;
       background-color: rgba(0,0,0,0.6);
+      @include m.mq( sp ) {
+         position: relative;  // bg-layer2 の基準位置
+      }
    }
    &__bg-layer {
       width: 60%;
-      height: 100%;
       background-color: rgba(0, 0, 0, 0.29);
+      @include m.mq( tablet ) {
+         width: 100%;
+      }
+      @include m.mq( sp ) {
+         background-color: rgba(0, 0, 0, 0);
+      }
    }
    &__wrapper {
       width: 73%;
       padding-top: 65px;
       padding-bottom: 52.5px;
       margin-left: (100% - 73%) * 0.47;
+      @include m.mq( sp ) {
+         position: relative;
+         z-index: 100;  // テキストが一番上のレイヤー
+      }
    }
    &__title {
       font-size: 28px;
@@ -34,5 +46,15 @@
       color: v.$font-color--white;
       font-size: 12.5px;
       line-height: 2.06;
+   }
+   &__bg-layer2 {
+      @include m.mq( sp ) {
+         background-color: rgba(0, 0, 0, 0.29);
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 60%;
+      }
    }
 }
