@@ -17,7 +17,20 @@
     &__item3 {
         grid-area: sidebar;
         @include m.mq( tablet ) {
-            display: none;
+            position: fixed;
+            z-index: 999;
+            top: 0;
+            right: -100%;
+            transition: all .6s;
+            &.open {
+                transform: translate3d(-44vw,0,0);
+                z-index: 999; 
+                height: 100vh;
+                overflow: auto; // サイドバーの縦スクロール
+                @include m.mq( sp ) {
+                    transform: translate3d(-87vw,0,0);
+                }
+            }
         }
     }
     &__item4 {

@@ -1,15 +1,18 @@
 @use "../../foundation/variable" as v;
+@use "../../foundation/mixin" as m;
 
 .p-sidebar {
     width: 100%;
     background-color: v.$bgcolor--sidebar;
     color: v.$font-color--gray;
-    // padding-top: 60px;
     padding-left: 12.5%;
     &__logo {
         margin-top: 63px;
         margin-bottom: 63px;
         font-size: 26.6px;
+        @include m.mq( tablet ) {
+            visibility: hidden;  // 要素の持つ位置や高さは残して非表示
+        }
     }
     &__li {
         padding-top: 27px;

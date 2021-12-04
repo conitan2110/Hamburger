@@ -1,4 +1,5 @@
 @use "../../foundation/variable" as v;
+@use "../../foundation/mixin" as m;
 
 .p-header {
     width: 100%;
@@ -7,8 +8,31 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @include m.mq( tablet ) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
     &__logo {
         font-size: 50px;
+        line-height: 1.325;
         margin-left: 4.18%;
+        @include m.mq( tablet ) {
+            font-size: 31.36px;
+            margin-left: 0;
+            margin-bottom: 4%;
+        }
+    }
+    &__button {
+        display: none;
+        @include m.mq( tablet ) {
+            cursor: pointer;
+            display: block;
+            position: absolute;
+            top: 8.3%;
+            right: 3%;
+            font-size: 27px;
+        }
     }
 }

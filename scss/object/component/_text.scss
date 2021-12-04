@@ -19,7 +19,7 @@
 
 h2.c-text__ttl {
     &--ja,
-    &--e:not(.p-sidebar__logo) {
+    &--e:not(.p-sidebar__logo):not(.p-header__button) {
         color: v.$font-color--white;
     }
 }

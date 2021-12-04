@@ -6,7 +6,7 @@
    background-image: url(../../../img/map.jpg);
    background-position: 0 50%;
    &__map-layer {
-      background-color: rgba(0,0,0,0.6);
+      background-color: rgba(0,0,0,0.4);
       @include m.mq( sp ) {
          position: relative;  // bg-layer2 の基準位置
       }
