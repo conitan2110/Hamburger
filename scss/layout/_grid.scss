@@ -18,13 +18,13 @@
         grid-area: sidebar;
         @include m.mq( tablet ) {
             position: fixed;
-            z-index: 999;
+            z-index: 200;
             top: 0;
             right: -100%;
             transition: all .6s;
             &.open {
                 transform: translate3d(-44vw,0,0);
-                z-index: 999; 
+                z-index: 200; 
                 height: 100vh;
                 overflow: auto; // サイドバーの縦スクロール
                 @include m.mq( sp ) {

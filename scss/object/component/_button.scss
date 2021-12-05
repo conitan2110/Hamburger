@@ -1,0 +1,6 @@
+@use "../../foundation/variable" as v;
+
+.c-button {
+    cursor: pointer;
+    font-family: v.$font-Roboto-Bold;  /* 見出し 英語（太字） */
+}

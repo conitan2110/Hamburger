@@ -24,15 +24,16 @@
             margin-bottom: 4%;
         }
     }
-    &__button {
-        display: none;
-        @include m.mq( tablet ) {
-            cursor: pointer;
-            display: block;
-            position: absolute;
-            top: 8.3%;
-            right: 3%;
-            font-size: 27px;
-        }
-    }
+    // ↓ p-menu-button に移行
+    // &__button {
+    //     display: none;
+    //     @include m.mq( tablet ) {
+    //         cursor: pointer;
+    //         display: block;
+    //         position: absolute;
+    //         top: 8.3%;
+    //         right: 3%;
+    //         font-size: 27px;
+    //     }
+    // }
 }

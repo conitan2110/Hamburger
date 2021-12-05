@@ -3,10 +3,10 @@
 .c-text {
     &__ttl {
         &--ja {
-            font-family: v.$font-Mplus-j-Bold;  /* 見出し 日本語 */
+            font-family: v.$font-Mplus-j-Bold;  /* 見出し 日本語（太字） */
         }
         &--e {
-            font-family: v.$font-Roboto-Bold;  /* 見出し 英語 */
+            font-family: v.$font-Roboto-Bold;  /* 見出し 英語（太字） */
         }
     }
     &--ja {
@@ -19,7 +19,7 @@
 
 h2.c-text__ttl {
     &--ja,
-    &--e:not(.p-sidebar__logo):not(.p-header__button) {
+    &--e:not(.p-sidebar__logo) {
         color: v.$font-color--white;
     }
 }

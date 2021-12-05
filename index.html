@@ -29,7 +29,8 @@
                     <input type="search" placeholder="" class="p-search-form__input c-form__input">
                     <input  type="submit" value="検索" class="p-search-form__button c-form__button">
                 </form>
-                <h2 class="p-header__button c-text__ttl--e">Menu</h2>
+                <!-- tablet/spのメニューボタン -->
+                <h2 class="p-menu-button__open c-button">Menu</h2>
             </header><!-- ここまでheader -->
 
             <!-- contents -->
@@ -42,13 +43,13 @@
                 <!-- food-menu -->
                 <div class="p-food-menu">
                     <ul class="p-food-menu__ul">
-                        <li class="p-food-menu__li c-bg">
+                        <li class="p-food-menu__li c-bg"><a href="#">
                             <div class="p-food-menu__head">
                                 <h2 class="p-food-menu__title c-text__ttl--e">Take Out</h2>
                                 <p class="p-food-menu__line c-line"></p>
                             </div>
                             <div class="p-food-menu__bottom">
-                                <dl class="p-food-menu__dl">
+                                <dl class="p-food-menu__dl c-bg--white">
                                     <dt class="p-food-menu__dt c-text--e">Take OUT</dt>
                                     <dd class="p-food-menu__dd c-text--ja">
                                         当店のテイクアウトで利用できる商品を掲載しています。
@@ -56,7 +57,7 @@
                                         当店のテイクアウトで利用できる商品を掲載しています。
                                     </dd>
                                 </dl>
-                                <dl class="p-food-menu__dl">
+                                <dl class="p-food-menu__dl c-bg--white">
                                     <dt class="p-food-menu__dt c-text--e">Take OUT</dt>
                                     <dd class="p-food-menu__dd c-text--ja">
                                         当店のテイクアウトで利用できる商品を掲載しています。
@@ -65,14 +66,14 @@
                                     </dd>
                                 </dl>
                             </div>
-                        </li>
-                        <li class="p-food-menu__li c-bg">
+                        </a></li>
+                        <li class="p-food-menu__li c-bg"><a href="#">
                             <div class="p-food-menu__head">
                                 <h2 class="p-food-menu__title c-text__ttl--e">Eat In</h2>
                                 <p class="p-food-menu__line c-line"></p>
                             </div>
                             <div class="p-food-menu__bottom">
-                                <dl class="p-food-menu__dl">
+                                <dl class="p-food-menu__dl c-bg--white">
                                     <dt class="p-food-menu__dt c-text--e">Eat In</dt>
                                     <dd class="p-food-menu__dd c-text--ja">
                                         当店のテイクアウトで利用できる商品を掲載しています。
@@ -80,7 +81,7 @@
                                         当店のテイクアウトで利用できる商品を掲載しています。
                                     </dd>
                                 </dl>
-                                <dl class="p-food-menu__dl">
+                                <dl class="p-food-menu__dl c-bg--white">
                                     <dt class="p-food-menu__dt c-text--e">Eat In</dt>
                                     <dd class="p-food-menu__dd c-text--ja">
                                         当店のテイクアウトで利用できる商品を掲載しています。
@@ -89,7 +90,7 @@
                                     </dd>
                                 </dl>
                             </div>
-                        </li>
+                        </a></li>
                     </ul>
                 </div><!-- ここまでfood-menu -->
 
@@ -118,6 +119,14 @@
                     </div>
                 </section><!-- ここまでaccess -->
             </article><!-- ここまでcontents -->
+
+            <!-- tablet/spの閉じるボタン -->
+            <div class="p-menu-button__close c-button">
+                <div>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div><!-- ここまで閉じるボタン -->
 
             <!-- sidebar -->
             <aside class="l-grid__item3 p-sidebar">

@@ -6,8 +6,14 @@
     background-color: v.$bgcolor--sidebar;
     color: v.$font-color--gray;
     padding-left: 12.5%;
+    @include m.mq( tablet ) {
+        padding-left: 5.5vw;
+    }
+    @include m.mq( sp ) {
+        padding-left: 10vw;
+    }
     &__logo {
-        margin-top: 63px;
+        margin-top: 63px;  // ***×ボタンに合わせて変更する？
         margin-bottom: 63px;
         font-size: 26.6px;
         @include m.mq( tablet ) {
@@ -22,12 +28,21 @@
             padding-top: 0;
         }
     }
+    &__sub-ul:last-child &__sub-li:last-child {
+        padding-bottom: 27px;
+    }
     &__sub-li {
         padding-left: 7%;
         padding-bottom: 16.6px;
         font-size: 15.7px;
         &:last-child {
             padding-bottom: 6.6px;
+        }
+        @include m.mq( tablet ) {
+            padding-left: 2vw;
+        }
+        @include m.mq( sp ) {
+            padding-left: 3.5vw;
         }
     }
     a {
