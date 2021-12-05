@@ -33,10 +33,10 @@
                 background: v.$font-color--gray;
                 transition: .3s ease-in-out;
                 &:nth-child(1) {
-                    top: 10px;
+                    top: calc(32px / 3 - 2px); // 線の太さの半分を調整
                 }
                 &:nth-child(2) {
-                    top: 20px;
+                    top: calc(32px / 3 * 2 - 2px); // 線の太さの半分を調整
                 }
             }
         }

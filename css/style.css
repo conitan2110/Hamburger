@@ -37,8 +37,8 @@ li {
     transition: all 0.6s;
   }
   .l-grid__item3.open {
-    -webkit-transform: translate3d(-44vw, 0, 0);
-            transform: translate3d(-44vw, 0, 0);
+    -webkit-transform: translateX(-44vw);
+            transform: translateX(-44vw);
     z-index: 200;
     height: 100vh;
     overflow: auto;
@@ -46,8 +46,8 @@ li {
 }
 @media (max-width: 834px) and (max-width: 640px) {
   .l-grid__item3.open {
-    -webkit-transform: translate3d(-87vw, 0, 0);
-            transform: translate3d(-87vw, 0, 0);
+    -webkit-transform: translateX(-87vw);
+            transform: translateX(-87vw);
   }
 }
 .l-grid__item4 {
@@ -541,10 +541,10 @@ h2.c-text__ttl--ja, h2.c-text__ttl--e:not(.p-sidebar__logo) {
   transition: 0.3s ease-in-out;
 }
 .p-menu-button__close div span:nth-child(1) {
-  top: 10px;
+  top: calc(32px / 3 - 2px);
 }
 .p-menu-button__close div span:nth-child(2) {
-  top: 20px;
+  top: calc(32px / 3 * 2 - 2px);
 }
 .p-menu-button__close.active {
   visibility: visible;

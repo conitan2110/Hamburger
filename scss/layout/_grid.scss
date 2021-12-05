@@ -23,12 +23,12 @@
             right: -100%;
             transition: all .6s;
             &.open {
-                transform: translate3d(-44vw,0,0);
+                transform: translateX(-44vw);
                 z-index: 200; 
                 height: 100vh;
                 overflow: auto; // サイドバーの縦スクロール
                 @include m.mq( sp ) {
-                    transform: translate3d(-87vw,0,0);
+                    transform: translateX(-87vw);
                 }
             }
         }
