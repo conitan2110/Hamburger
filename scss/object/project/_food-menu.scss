@@ -12,7 +12,6 @@
         margin-left: 3.5%;
     }
     &__ul {
-        // min-height: 642px; //*****考える
         color: v.$font-color--brown;
         display: flex;
         justify-content: center;
@@ -31,9 +30,6 @@
         // ここでは background-size: cover にしないようにしたい
         background-position: top center;
         background-repeat: no-repeat;
-        // display: flex;
-        // flex-direction: column;
-        // justify-content: space-between;
         @include m.mq( tablet ) {
             width: 43%;
         }
@@ -55,19 +51,20 @@
             }
         }
         a {
-            min-height: 642px; //*****考える
+            min-height: 900px;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             width: 100%;
             height: 100%;
             color: v.$font-color--brown;
+            @include m.mq( tablet ) {
+                min-height: 600px;
+            }
         }
     }
     &__dl {
-        // background-color: rgba(255,255,255,0.8);
         margin: 3.2%;
-        // padding: 17px 25px 17px 19px;
         padding: 13px 4.27% 13px 3.24%;
     }
     &__dt {

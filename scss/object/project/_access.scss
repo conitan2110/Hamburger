@@ -26,9 +26,16 @@
       padding-top: 65px;
       padding-bottom: 52.5px;
       margin-left: (100% - 73%) * 0.47;
+      @include m.mq( tablet ) {
+         width: 90%;
+         margin: 0 5%;
+         padding: 30px 0;
+      }
       @include m.mq( sp ) {
          position: relative;
          z-index: 100;  // テキストが一番上のレイヤー
+         width: 80%;
+         margin: 0 10%;
       }
    }
    &__title {
@@ -40,6 +47,9 @@
       padding-bottom: 0;
       margin-top: 43.5px;
       margin-bottom: 49.8px;
+      @include m.mq( tablet ) {
+         margin: 15px 0;
+      }
    }
    &__text {
       font-family: v.$font-Mplus-j-Bold;
