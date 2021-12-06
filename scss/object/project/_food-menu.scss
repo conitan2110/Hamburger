@@ -10,6 +10,13 @@
     }
     &__line {
         margin-left: 3.5%;
+        @include m.mq( tablet ) {
+            width: 30px;
+            padding-bottom: 17px;
+        }
+        @include m.mq( sp ) {
+            padding-bottom: 15px;
+        }
     }
     &__ul {
         color: v.$font-color--brown;

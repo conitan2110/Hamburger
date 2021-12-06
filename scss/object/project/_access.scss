@@ -5,37 +5,44 @@
    width: 100%;
    background-image: url(../../../img/map.jpg);
    background-position: 0 50%;
-   &__map-layer {
+   &__map-layer { // mapを覆う透過の黒
       background-color: rgba(0,0,0,0.4);
-      @include m.mq( sp ) {
-         position: relative;  // bg-layer2 の基準位置
+      position: relative;  // bg-layer の基準位置
+   }
+   &__contents-area { // コンテンツ領域を確保
+      width: 60%;
+      @include m.mq( tablet ) {
+         width: 100%;
       }
    }
-   &__bg-layer {
+   &__bg-layer { // テキスト領域と無関係の黒背景
       width: 60%;
+      height: 100%;
       background-color: rgba(0, 0, 0, 0.29);
+      position: absolute;
+      top: 0;
+      left: 0;
       @include m.mq( tablet ) {
          width: 100%;
       }
       @include m.mq( sp ) {
-         background-color: rgba(0, 0, 0, 0);
+         width: 100%;
+         height: 60%;
       }
    }
    &__wrapper {
+      position: relative;
+      z-index: 100;  // テキストが一番上のレイヤー
       width: 73%;
       padding-top: 65px;
       padding-bottom: 52.5px;
-      margin-left: (100% - 73%) * 0.47;
+      margin: 0 auto;
       @include m.mq( tablet ) {
          width: 90%;
-         margin: 0 5%;
          padding: 30px 0;
       }
       @include m.mq( sp ) {
-         position: relative;
-         z-index: 100;  // テキストが一番上のレイヤー
          width: 80%;
-         margin: 0 10%;
       }
    }
    &__title {
@@ -56,15 +63,5 @@
       color: v.$font-color--white;
       font-size: 12.5px;
       line-height: 2.06;
-   }
-   &__bg-layer2 {
-      @include m.mq( sp ) {
-         background-color: rgba(0, 0, 0, 0.29);
-         position: absolute;
-         top: 0;
-         left: 0;
-         width: 100%;
-         height: 60%;
-      }
    }
 }
