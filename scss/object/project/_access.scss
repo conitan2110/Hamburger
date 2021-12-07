@@ -47,6 +47,9 @@
    }
    &__title {
       font-size: 28px;
+      @include m.mq( tablet ) {
+         font-size: 23.5px;
+      }
    }
    &__line {
       width: 60px;
@@ -63,5 +66,8 @@
       color: v.$font-color--white;
       font-size: 12.5px;
       line-height: 2.06;
+      @include m.mq( tablet ) {
+         font-size: 11px;
+      }
    }
 }

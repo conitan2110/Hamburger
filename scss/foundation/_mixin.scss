@@ -1,6 +1,14 @@
+// メディアクエリ用（単位あり）
 $breakpoint: (
     'tablet': 834px,
     'sp': 640px,
+);
+
+// フォントサイズ関数用（単位なし）
+$breakpoint2: (
+    'pc': 960,
+    'tablet': 834,
+    'sp': 640,
 );
 
 // メディアクエリ
@@ -13,4 +21,16 @@ $breakpoint: (
     @media ( max-width: map-get( $breakpoint, $key )) {
         @content;
     }
+}
+
+// フォントサイズを可変に
+@mixin font-size ($size, $viewpoint: false) {
+    @if $viewpoint { // ビューポート指定あり
+        font-size: get_vw($size, map-get( $breakpoint2, $viewpoint ));
+    } @else { // ビューポート指定がなければpx指定
+        font-size: $size + px;
+    }
+}
+@function get_vw($size, $viewpoint) {
+    @return (100 / $viewpoint ) * $size * 1vw;
 }

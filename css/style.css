@@ -84,7 +84,7 @@ h2.c-text__ttl--ja, h2.c-text__ttl--e:not(.p-sidebar__logo) {
 .c-line {
   width: 49px;
   border-bottom: 4px solid #fff;
-  padding-bottom: 24px;
+  padding-bottom: 10px;
   /* 内容と線との間隔量 */
 }
 
@@ -159,13 +159,13 @@ h2.c-text__ttl--ja, h2.c-text__ttl--e:not(.p-sidebar__logo) {
   }
 }
 .p-header__logo {
-  font-size: 50px;
+  font-size: 3.3333333333vw;
   line-height: 1.325;
   margin-left: 4.18%;
 }
 @media (max-width: 834px) {
   .p-header__logo {
-    font-size: 31.36px;
+    font-size: 35px;
     margin-left: 0;
     margin-bottom: 29px;
   }
@@ -190,17 +190,23 @@ h2.c-text__ttl--ja, h2.c-text__ttl--e:not(.p-sidebar__logo) {
 .p-sidebar__logo {
   margin-top: 63px;
   margin-bottom: 63px;
-  font-size: 26.6px;
+  font-size: 2.0833333333vw;
 }
 @media (max-width: 834px) {
   .p-sidebar__logo {
     visibility: hidden;
+    /* 要素の持つ位置や高さは残して非表示 */
   }
 }
 .p-sidebar__li {
   padding-top: 27px;
   padding-bottom: 27px;
-  font-size: 18.8px;
+  font-size: 1.4583333333vw;
+}
+@media (max-width: 834px) {
+  .p-sidebar__li {
+    font-size: 18.8px;
+  }
 }
 .p-sidebar__li:first-child {
   padding-top: 0;
@@ -211,7 +217,12 @@ h2.c-text__ttl--ja, h2.c-text__ttl--e:not(.p-sidebar__logo) {
 .p-sidebar__sub-li {
   padding-left: 7%;
   padding-bottom: 16.6px;
-  font-size: 15.7px;
+  font-size: 1.25vw;
+}
+@media (max-width: 834px) {
+  .p-sidebar__sub-li {
+    font-size: 15.7px;
+  }
 }
 .p-sidebar__sub-li:last-child {
   padding-bottom: 6.6px;
@@ -308,7 +319,7 @@ h2.c-text__ttl--ja, h2.c-text__ttl--e:not(.p-sidebar__logo) {
 }
 .p-search-form__input {
   padding: 3px 0 3px 2.5em;
-  /* アイコンを設置するため左の余白を多めに指定*/
+  /* アイコンを設置するため左の余白を多めに指定 */
   width: 72.6%;
 }
 .p-search-form__button {
@@ -343,12 +354,17 @@ h2.c-text__ttl--ja, h2.c-text__ttl--e:not(.p-sidebar__logo) {
   width: 100%;
 }
 .p-food-menu__title {
-  font-size: 62.7px;
+  font-size: 4.1666666667vw;
   margin-top: 15px;
-  margin-left: 3%;
+  margin-left: 4%;
+}
+@media (max-width: 834px) {
+  .p-food-menu__title {
+    font-size: 35px;
+  }
 }
 .p-food-menu__line {
-  margin-left: 3.5%;
+  margin-left: 4.5%;
 }
 @media (max-width: 834px) {
   .p-food-menu__line {
@@ -443,8 +459,14 @@ h2.c-text__ttl--ja, h2.c-text__ttl--e:not(.p-sidebar__logo) {
   }
 }
 .p-food-menu__dl {
+  font-size: 19px;
   margin: 3.2%;
   padding: 13px 4.27% 13px 3.24%;
+}
+@media (max-width: 834px) {
+  .p-food-menu__dl {
+    font-size: 17px;
+  }
 }
 .p-food-menu__dt {
   font-family: "M+ M Type-1 (basic latin) Bold";
@@ -453,6 +475,11 @@ h2.c-text__ttl--ja, h2.c-text__ttl--e:not(.p-sidebar__logo) {
 }
 .p-food-menu__dd {
   font-size: 12.5px;
+}
+@media (max-width: 834px) {
+  .p-food-menu__dd {
+    font-size: 11px;
+  }
 }
 
 .p-access {
@@ -513,6 +540,11 @@ h2.c-text__ttl--ja, h2.c-text__ttl--e:not(.p-sidebar__logo) {
 .p-access__title {
   font-size: 28px;
 }
+@media (max-width: 834px) {
+  .p-access__title {
+    font-size: 23.5px;
+  }
+}
 .p-access__line {
   width: 60px;
   border-width: 2px;
@@ -531,6 +563,11 @@ h2.c-text__ttl--ja, h2.c-text__ttl--e:not(.p-sidebar__logo) {
   font-size: 12.5px;
   line-height: 2.06;
 }
+@media (max-width: 834px) {
+  .p-access__text {
+    font-size: 11px;
+  }
+}
 
 .p-menu-button__open {
   display: none;
@@ -543,6 +580,11 @@ h2.c-text__ttl--ja, h2.c-text__ttl--e:not(.p-sidebar__logo) {
     top: 8.3%;
     right: 3%;
     font-size: 27px;
+  }
+}
+@media (max-width: 640px) {
+  .p-menu-button__open {
+    font-size: 20px;
   }
 }
 .p-menu-button__close {
@@ -569,9 +611,11 @@ h2.c-text__ttl--ja, h2.c-text__ttl--e:not(.p-sidebar__logo) {
 }
 .p-menu-button__close div span:nth-child(1) {
   top: calc(32px / 3 - 2px);
+  /* 線の太さの半分を調整 */
 }
 .p-menu-button__close div span:nth-child(2) {
   top: calc(32px / 3 * 2 - 2px);
+  /* 線の太さの半分を調整 */
 }
 .p-menu-button__close.active {
   visibility: visible;

@@ -13,17 +13,22 @@
         padding-left: 10vw;
     }
     &__logo {
-        margin-top: 63px;  // ***×ボタンに合わせて変更する？
+        margin-top: 63px;
         margin-bottom: 63px;
-        font-size: 26.6px;
+        // font-size: 26.6px;
+        @include m.font-size(20, pc);
         @include m.mq( tablet ) {
-            visibility: hidden;  // 要素の持つ位置や高さは残して非表示
+            visibility: hidden;  /* 要素の持つ位置や高さは残して非表示 */
         }
     }
     &__li {
         padding-top: 27px;
         padding-bottom: 27px;
-        font-size: 18.8px;
+        // font-size: 18.8px;
+        @include m.font-size(14, pc);
+        @include m.mq( tablet ) {
+            font-size: 18.8px;
+        }
         &:first-child {
             padding-top: 0;
         }
@@ -34,7 +39,11 @@
     &__sub-li {
         padding-left: 7%;
         padding-bottom: 16.6px;
-        font-size: 15.7px;
+        // font-size: 15.7px;
+        @include m.font-size(12, pc);
+        @include m.mq( tablet ) {
+            font-size: 15.7px;
+        }
         &:last-child {
             padding-bottom: 6.6px;
         }
