@@ -1,32 +1,19 @@
 @use "../../foundation/variable" as v;
 
 .c-card {
+    width: 100%;
     font-family: v.$font-Mplus-j-Bold;
-    display: grid;
-    grid-template-rows: auto auto auto auto;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-        "pic title"
-        "pic subtitle"
-        "pic description"
-        "pic button";
+    display: flex;
     &__thumbnail {
-        grid-area: pic;
+        width: 50%;
     }
-    &__title {
-        // font-family: v.$font-Mplus-j-Bold;
-        grid-area: title;
-    }
-    &__subtitle {
-        // font-family: v.$font-Mplus-j-Bold;
-        grid-area: subtitle;
+    &__contents {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
     &__description {
         font-family: v.$font-Mplus-j-Regular;
-        grid-area: description;
-    }
-    &__button {
-        // font-family: v.$font-Mplus-j-Bold;
-        grid-area: button;
     }
 }

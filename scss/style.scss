@@ -25,6 +25,7 @@
 @use "object/component/form";
 @use "object/component/button";
 @use "object/component/overlay";
+@use "object/component/contents-wrapper";
 @use "object/component/container";
 @use "object/component/card";
 @use "object/component/pagination";
@@ -40,6 +41,7 @@
 @use "object/project/food-menu";
 @use "object/project/access";
 @use "object/project/menu-button";
+@use "object/project/menu-card";
 
 /* Utility */
 // @use "object/utility";
