@@ -25,6 +25,9 @@
 @use "object/component/form";
 @use "object/component/button";
 @use "object/component/overlay";
+@use "object/component/container";
+@use "object/component/card";
+@use "object/component/pagination";
 
 /* Project */
 @use "object/project/header";
@@ -32,6 +35,8 @@
 @use "object/project/footer";
 @use "object/project/search-form";
 @use "object/project/mainvisual";
+@use "object/project/page-title";
+@use "object/project/info";
 @use "object/project/food-menu";
 @use "object/project/access";
 @use "object/project/menu-button";

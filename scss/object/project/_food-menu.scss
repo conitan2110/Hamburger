@@ -5,6 +5,7 @@
     width: 100%;
     &__title {
         // font-size: 62.7px;
+        color: v.$font-color--white;
         @include m.font-size(40, pc);
         margin-top: 15px;
         margin-left: 4%;

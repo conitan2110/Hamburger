@@ -1,0 +1,14 @@
+@use "../../foundation/variable" as v;
+@use "../../foundation/mixin" as m;
+
+.p-info {
+    color: v.$font-color--brown;
+    &__head {
+        margin-bottom: 20px;
+        font-size: 28px;
+    }
+    &__text {
+        margin-bottom: 54px;
+        font-size: 12.5px;
+    }
+}

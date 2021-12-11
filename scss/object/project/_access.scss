@@ -46,6 +46,7 @@
       }
    }
    &__title {
+      color: v.$font-color--white;
       font-size: 28px;
       @include m.mq( tablet ) {
          font-size: 23.5px;
