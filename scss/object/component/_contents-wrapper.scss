@@ -1,6 +1,11 @@
+@use "../../foundation/mixin" as m;
+
 .c-contents-wrapper {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: calc(100% - 187px);
+    @include m.mq( tablet ) {
+        height: calc(100% - 222px);
+    }
 }

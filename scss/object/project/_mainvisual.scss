@@ -13,6 +13,12 @@
     &__title {
         color: v.$font-color--white;
         font-size: 31px;
-        padding-left: 5.53%;
+        padding-left: 67.4px;
+        @include m.mq( tablet ) {
+            font-size: 28px;
+        }
+        @include m.mq( sp ) {
+            padding-left: 20px;
+        }
     }
 }

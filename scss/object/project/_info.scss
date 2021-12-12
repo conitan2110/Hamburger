@@ -6,9 +6,21 @@
     &__head {
         margin-bottom: 20px;
         font-size: 28px;
+        @include m.mq( tablet ) {
+            margin-bottom: 19.6px;
+        }
+        @include m.mq( sp ) {
+            margin-bottom: 23.5px;
+        }
     }
     &__text {
         margin-bottom: 54px;
         font-size: 12.5px;
+        @include m.mq( tablet ) {
+            margin-bottom: 29px;
+        }
+        @include m.mq( sp ) {
+            margin-bottom: 15px;
+        }
     }
 }

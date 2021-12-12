@@ -5,23 +5,40 @@
     color: v.$font-color--white;
     &__thumbnail {
         object-fit: cover; /* アスペクト比を維持したまま拡大縮小 */
-        width: 50%;
+        @include m.mq( sp ) {
+            max-height: 250px;
+        }
     }
     &__contents {
         padding: 41.5px 4.65% 47px;
         background-color: v.$bgcolor--card;
+        @include m.mq( tablet ) {
+            padding: 23px 4.6% 31px;
+        }
     }
     &__title {
-        margin-bottom: 41.4px;
+        margin-bottom: 36.9px;
         font-size: 28px;
+        @include m.mq( tablet ) {
+            margin-bottom: 19px;
+            font-size: 15.7px;
+        }
     }
     &__subtitle {
         margin-bottom: 13.3px;
         font-size: 19px;
+        @include m.mq( tablet ) {
+            margin-bottom: 7.84px;
+            font-size: 12.5px;
+        }
     }
     &__description {
         margin-bottom: 47px;
         font-size: 12.5px;
+        @include m.mq( tablet ) {
+            margin-bottom: 31px;
+            font-size: 12.5px;
+        }
     }
     &__button {
         font-size: 12.5px;
@@ -31,5 +48,8 @@
         color: v.$font-color--gray;
         background-color: v.$font-color--white;
         border-radius: 50px;
+        @include m.mq( tablet ) {
+            padding: 8px 32px;
+        }
     }
 }

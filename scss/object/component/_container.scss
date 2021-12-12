@@ -1,7 +1,15 @@
 @use "../../foundation/variable" as v;
+@use "../../foundation/mixin" as m;
 
 .c-container {
     width: 87%;
     margin: 0 auto;
     padding: 47px 0;
+    @include m.mq( tablet ) {
+        width: 90%;
+        padding: 28px 0;
+    }
+    @include m.mq( sp ) {
+        padding: 23.5px 0;
+    }
 }
