@@ -3,9 +3,6 @@
 
 .p-menu-card {
     color: v.$font-color--white;
-    a {
-        color: v.$font-color--white;
-    }
     &__thumbnail {
         object-fit: cover; /* アスペクト比を維持したまま拡大縮小 */
         width: 50%;
@@ -34,8 +31,5 @@
         color: v.$font-color--gray;
         background-color: v.$font-color--white;
         border-radius: 50px;
-        a {
-            color: v.$font-color--gray;
-        }
     }
 }
