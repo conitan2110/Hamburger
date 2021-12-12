@@ -1,9 +1,11 @@
 @use "../../foundation/variable" as v;
 
 .c-card {
+    position: relative;
     width: 100%;
     font-family: v.$font-Mplus-j-Bold;
     display: flex;
+    margin-bottom: 23.5px;
     &__thumbnail {
         width: 50%;
     }
@@ -15,5 +17,13 @@
     }
     &__description {
         font-family: v.$font-Mplus-j-Regular;
+    }
+    &__link {
+        display: block;
+        position: absolute; /* カード全体にリンク */
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
     }
 }
