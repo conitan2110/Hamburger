@@ -1,4 +1,8 @@
 @charset "UTF-8";
+body {
+  background-color: #FFFDFA;
+}
+
 a {
   text-decoration: none;
 }
@@ -340,6 +344,9 @@ li {
     margin-left: 0;
     margin-bottom: 29px;
   }
+}
+.p-header a {
+  color: #707070;
 }
 
 .p-sidebar {
