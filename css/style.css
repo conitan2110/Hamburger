@@ -254,12 +254,17 @@ li {
 }
 .c-pagination__page-count {
   font-family: "Roboto";
+  margin-right: 8px;
+}
+@media (max-width: 640px) {
+  .c-pagination__page-count {
+    display: none;
+  }
 }
 .c-pagination__ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: 8px;
 }
 .c-pagination__li {
   font-family: "Roboto";
@@ -274,6 +279,25 @@ li {
 .c-pagination__li:nth-child(2) {
   color: #fff;
   background-color: #3C2B1C;
+}
+@media (max-width: 640px) {
+  .c-pagination__li {
+    margin: 0 5px;
+  }
+  .c-pagination__li:not(:first-child):not(:last-child) {
+    /* 最初と最後以外は隠す */
+    visibility: hidden;
+  }
+  .c-pagination__li:first-child::after {
+    content: " 前へ";
+    font-family: "M+ Type-1 (general-j) Regular";
+    white-space: nowrap;
+  }
+  .c-pagination__li:last-child::before {
+    content: "次へ ";
+    font-family: "M+ Type-1 (general-j) Regular";
+    white-space: nowrap;
+  }
 }
 
 .p-header {

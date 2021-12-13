@@ -13,10 +13,13 @@
     }
     &__page-count {
         font-family: v.$font-Roboto-Bold;
+        margin-right: 8px;
+        @include m.mq( sp ) {
+            display: none;
+        }
     }
     &__ul {
         display: flex;
-        margin-left: 8px;
     }
     &__li {
         font-family: v.$font-Roboto-Bold;
@@ -30,6 +33,22 @@
         &:nth-child(2) {
             color: v.$font-color--white;
             background-color: v.$bgcolor--card;
+        }
+        @include m.mq( sp ) {
+            margin: 0 5px;
+            &:not(:first-child):not(:last-child) { /* 最初と最後以外は隠す */
+                visibility: hidden;
+            }
+            &:first-child::after {
+                content: " 前へ";
+                font-family: v.$font-Mplus-j-Regular;
+                white-space: nowrap;
+            }
+            &:last-child::before {
+                content: "次へ ";
+                font-family: v.$font-Mplus-j-Regular;
+                white-space: nowrap;
+            }
         }
     }
 }
