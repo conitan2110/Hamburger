@@ -1,0 +1,21 @@
+@use "../../foundation/variable" as v;
+@use "../../foundation/mixin" as m;
+
+.c-titlevisual {
+    height: 392px;
+    width: 100%;
+    display: flex;
+    align-items: center; 
+    @include m.mq( sp ) {
+        height: 177px;
+    }
+    &__title {
+        color: v.$font-color--white;
+        font-size: 47px;
+        padding-left: 67.4px;
+        @include m.mq( sp ) {
+            font-size: 28px;
+            padding-left: 20px;
+        }
+    }
+}
