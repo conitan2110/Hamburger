@@ -32,6 +32,12 @@
         @include m.mq( sp ) {
             margin-bottom: 15px;
         }
+        &.text-right {
+            margin-left: 3%;
+        }
+        &.text-left {
+            margin-right: 3%;
+        }
     }
     a {
         text-decoration: underline;
@@ -40,5 +46,49 @@
     blockquote {
         background-color: v.$bgcolor--blockquote;
         padding: 39px;
+        margin-bottom: 47px;
+    }
+    img {
+        margin-bottom: 47px;
+        &.big {
+            max-width: 100%;
+        }
+        &.medium {
+            object-fit: contain;
+            width: 43%;
+            &.center {
+                @include m.mq( tablet ) {
+                    width: 80%;
+                }
+            }
+        }
+        &.small {
+            object-fit: contain;
+            width: calc(100% / 3 - 1.48%);
+            @include m.mq( tablet ) {
+                width: calc(100% / 2 - 1.48%);
+            }
+            @include m.mq( sp ) {
+                width: 100%;
+            }
+        }
+    }
+    div {
+        margin-bottom: 47px;
+        &.flex-row {
+            display: flex;
+            align-items: flex-start;
+            img {
+                margin-bottom: 0;
+            }
+        }
+        &.flex-wrap {
+            flex-wrap: wrap;
+            column-gap: 1.48%;
+            row-gap: 15.7px;
+        }
+    }
+    .center {
+        margin: 0 auto 47px;
     }
 }
