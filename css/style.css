@@ -7,12 +7,10 @@ a {
   text-decoration: none;
 }
 
+ol,
 ul {
   padding: 0;
   margin: 0;
-}
-
-li {
   list-style: none;
 }
 
@@ -710,9 +708,11 @@ li {
 }
 .p-article p.text-right {
   margin-left: 3%;
+  margin-bottom: 0;
 }
 .p-article p.text-left {
   margin-right: 3%;
+  margin-bottom: 0;
 }
 .p-article a {
   text-decoration: underline;
@@ -742,11 +742,12 @@ li {
 .p-article img.small {
   -o-object-fit: contain;
      object-fit: contain;
-  width: calc(100% / 3 - 1.48%);
+  width: calc(97% / 3);
+  /* 余白分を100%から引いてから画像数で割る */
 }
 @media (max-width: 834px) {
   .p-article img.small {
-    width: calc(100% / 2 - 1.48%);
+    width: calc(98.5% / 2);
   }
 }
 @media (max-width: 640px) {
@@ -771,13 +772,71 @@ li {
 .p-article div.flex-wrap {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-column-gap: 1.48%;
-     -moz-column-gap: 1.48%;
-          column-gap: 1.48%;
+  -webkit-column-gap: 1.5%;
+     -moz-column-gap: 1.5%;
+          column-gap: 1.5%;
   row-gap: 15.7px;
+}
+.p-article ol {
+  padding-left: 50px;
+  margin-bottom: 15.7px;
+}
+.p-article ol.decimal {
+  list-style-type: decimal;
+}
+.p-article ol.outside {
+  list-style-position: outside;
+}
+.p-article ol.inside {
+  list-style-position: inside;
+}
+.p-article ol.outside-none {
+  padding-left: 25px;
+}
+.p-article ol.inside-none {
+  padding-left: 50px;
+}
+.p-article code {
+  display: inline-block;
+  width: 100%;
+  font-family: "M+ M Type-1 (basic latin) Regular";
+  background-color: #F5F5F5;
+  padding: 39px;
+  margin-bottom: 47px;
+}
+.p-article pre {
+  font-family: "M+ M Type-1 (basic latin) Regular";
+}
+.p-article table,
+.p-article td {
+  border-collapse: collapse;
+  border: 1px solid #707070;
+}
+.p-article table {
+  width: 100%;
+  margin-bottom: 47px;
+}
+.p-article td {
+  height: 60px;
+  padding-left: 23.5px;
+}
+.p-article td.td_left {
+  width: 32%;
+}
+.p-article td.td_right {
+  width: 68%;
 }
 .p-article .center {
   margin: 0 auto 47px;
+}
+.p-article__button {
+  width: 31.7%;
+  height: 81.5px;
+  border-radius: 1.3em;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#DED8D3), to(#F2EDE9));
+  background-image: linear-gradient(0deg, #DED8D3, #F2EDE9);
+  font-family: "M+ Type-1 (general-j) Bold";
+  margin-bottom: 47px;
 }
 
 .p-food-menu {

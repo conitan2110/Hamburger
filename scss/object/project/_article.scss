@@ -34,9 +34,11 @@
         }
         &.text-right {
             margin-left: 3%;
+            margin-bottom: 0;
         }
         &.text-left {
             margin-right: 3%;
+            margin-bottom: 0;
         }
     }
     a {
@@ -44,7 +46,7 @@
         color: v.$font-color--bluegray;
     }
     blockquote {
-        background-color: v.$bgcolor--blockquote;
+        background-color: v.$bgcolor--block;
         padding: 39px;
         margin-bottom: 47px;
     }
@@ -64,9 +66,9 @@
         }
         &.small {
             object-fit: contain;
-            width: calc(100% / 3 - 1.48%);
+            width: calc(97% / 3);  /* 余白分を100%から引いてから画像数で割る */
             @include m.mq( tablet ) {
-                width: calc(100% / 2 - 1.48%);
+                width: calc(98.5% / 2);
             }
             @include m.mq( sp ) {
                 width: 100%;
@@ -84,11 +86,68 @@
         }
         &.flex-wrap {
             flex-wrap: wrap;
-            column-gap: 1.48%;
+            column-gap: 1.5%;
             row-gap: 15.7px;
+        }
+    }
+    ol {
+        padding-left: 50px;
+        margin-bottom: 15.7px;
+        &.decimal {
+            list-style-type: decimal;
+        }
+        &.outside {
+            list-style-position: outside;
+        }
+        &.inside {
+            list-style-position: inside;
+        }
+        &.outside-none {
+            padding-left: 25px;
+        }
+        &.inside-none {
+            padding-left: 50px;
+        }
+    }
+    code {
+        display: inline-block;
+        width: 100%;
+        font-family: v.$font-Mplus-Regular;
+        background-color: v.$bgcolor--block;
+        padding: 39px;
+        margin-bottom: 47px;
+    }
+    pre {
+        font-family: v.$font-Mplus-Regular;
+    }
+    table,
+    td {
+        border-collapse: collapse;
+        border: 1px solid v.$font-color--gray;
+    }
+    table {
+        width: 100%;
+        margin-bottom: 47px;
+    }
+    td {
+        height: 60px;
+        padding-left: 23.5px;
+        &.td_left {
+            width: 32%;
+        }
+        &.td_right {
+            width: 68%;
         }
     }
     .center {
         margin: 0 auto 47px;
+    }
+    &__button {
+        width: 31.7%;
+        height: 81.5px;
+        border-radius: 1.3em;
+        background-image: linear-gradient(0deg, #DED8D3, #F2EDE9);
+        font-family: v.$font-Mplus-j-Bold;
+        margin-bottom: 47px;
     }
 }
