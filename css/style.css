@@ -3,12 +3,15 @@ body {
   background-color: #FFFDFA;
 }
 
+h5, h6 {
+  margin: 0;
+}
+
 a {
   text-decoration: none;
 }
 
-ol,
-ul {
+ol, ul {
   padding: 0;
   margin: 0;
   list-style: none;
@@ -670,25 +673,41 @@ ul {
   font-size: 12.5px;
   color: #3C2A10;
 }
+@media (max-width: 834px) {
+  .p-article__container {
+    width: 85.6%;
+    padding: 47px 0;
+  }
+}
+@media (max-width: 640px) {
+  .p-article__container {
+    padding: 23.5px 0;
+  }
+}
 .p-article h2, .p-article h3, .p-article h4, .p-article h5, .p-article h6 {
   font-family: "M+ Type-1 (general-j) Bold";
   margin-bottom: 47px;
 }
+@media (max-width: 640px) {
+  .p-article h2, .p-article h3, .p-article h4, .p-article h5, .p-article h6 {
+    margin-bottom: 23.5px;
+  }
+}
 .p-article h2 {
   font-size: 28px;
 }
-@media (max-width: 834px) {
-  .p-article h2 {
-    margin-bottom: 19.6px;
-  }
-}
 @media (max-width: 640px) {
   .p-article h2 {
-    margin-bottom: 23.5px;
+    font-size: 22px;
   }
 }
 .p-article h3 {
   font-size: 22px;
+}
+@media (max-width: 640px) {
+  .p-article h3 {
+    font-size: 19px;
+  }
 }
 .p-article h4, .p-article h5, .p-article h6 {
   font-size: 15.7px;
@@ -696,14 +715,9 @@ ul {
 .p-article p {
   margin-bottom: 47px;
 }
-@media (max-width: 834px) {
-  .p-article p {
-    margin-bottom: 29px;
-  }
-}
 @media (max-width: 640px) {
   .p-article p {
-    margin-bottom: 15px;
+    margin-bottom: 23.5px;
   }
 }
 .p-article p.text-right {
@@ -723,8 +737,19 @@ ul {
   padding: 39px;
   margin-bottom: 47px;
 }
+@media (max-width: 640px) {
+  .p-article blockquote {
+    padding: 23.5px 15.7px;
+    margin-bottom: 23.5px;
+  }
+}
 .p-article img {
   margin-bottom: 47px;
+}
+@media (max-width: 640px) {
+  .p-article img {
+    margin-bottom: 23.5px;
+  }
 }
 .p-article img.big {
   max-width: 100%;
@@ -758,6 +783,11 @@ ul {
 .p-article div {
   margin-bottom: 47px;
 }
+@media (max-width: 640px) {
+  .p-article div {
+    margin-bottom: 23.5px;
+  }
+}
 .p-article div.flex-row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -777,24 +807,29 @@ ul {
           column-gap: 1.5%;
   row-gap: 15.7px;
 }
-.p-article ol {
-  padding-left: 50px;
+.p-article ol, .p-article ul {
   margin-bottom: 15.7px;
 }
-.p-article ol.decimal {
+.p-article ol.decimal, .p-article ul.decimal {
   list-style-type: decimal;
 }
-.p-article ol.outside {
-  list-style-position: outside;
-}
-.p-article ol.inside {
+.p-article ol.first, .p-article ul.first {
   list-style-position: inside;
+  padding-left: 39px;
 }
-.p-article ol.outside-none {
-  padding-left: 25px;
+@media (max-width: 640px) {
+  .p-article ol.first, .p-article ul.first {
+    padding-left: 0;
+  }
 }
-.p-article ol.inside-none {
-  padding-left: 50px;
+.p-article ol.second, .p-article ul.second {
+  list-style-position: inside;
+  padding-left: 55px;
+}
+@media (max-width: 640px) {
+  .p-article ol.second, .p-article ul.second {
+    padding-left: 16px;
+  }
 }
 .p-article code {
   display: inline-block;
@@ -803,6 +838,11 @@ ul {
   background-color: #F5F5F5;
   padding: 39px;
   margin-bottom: 47px;
+}
+@media (max-width: 640px) {
+  .p-article code {
+    margin-bottom: 23.5px;
+  }
 }
 .p-article pre {
   font-family: "M+ M Type-1 (basic latin) Regular";
@@ -815,6 +855,11 @@ ul {
 .p-article table {
   width: 100%;
   margin-bottom: 47px;
+}
+@media (max-width: 640px) {
+  .p-article table {
+    margin-bottom: 23.5px;
+  }
 }
 .p-article td {
   height: 60px;
@@ -829,14 +874,26 @@ ul {
 .p-article .center {
   margin: 0 auto 47px;
 }
+@media (max-width: 640px) {
+  .p-article .center {
+    margin: 0 auto 23.5px;
+  }
+}
 .p-article__button {
-  width: 31.7%;
+  width: 336px;
   height: 81.5px;
   border-radius: 1.3em;
   background-image: -webkit-gradient(linear, left bottom, left top, from(#DED8D3), to(#F2EDE9));
   background-image: linear-gradient(0deg, #DED8D3, #F2EDE9);
   font-family: "M+ Type-1 (general-j) Bold";
   margin-bottom: 47px;
+}
+@media (max-width: 640px) {
+  .p-article__button {
+    margin-bottom: 23.5px;
+    max-width: 100%;
+    height: 63.5px;
+  }
 }
 
 .p-food-menu {
