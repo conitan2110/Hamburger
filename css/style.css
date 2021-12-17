@@ -636,6 +636,10 @@ ol, ul {
   background-image: url(../../../img/single-title-pc.jpg);
 }
 
+.p-page-titlevisual {
+  background-image: url(../../../img/page-title-pc.jpg);
+}
+
 .p-info {
   color: #3C2A10;
 }
